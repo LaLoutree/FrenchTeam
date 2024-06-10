@@ -1,7 +1,21 @@
-
 # Bomber Man
 
-This project is all about creating a game like the classic Bomber Man that every one knows but mainly done in C++.
+This project is all about creating a game like the classic Bomberman that every one knows but mainly done in C++ while adding some innovations.
+
+This Bomberman game is a multiplayer game where players must attempt to eliminate each other and be the last one standing. 
+Gameplay involves strategically placing down bombs, which explode in all four main direction (North, West, South and East) after a certain amount of time, in order to destroy obstacles and kill enemies and others players. 
+The player can pick up various power-ups, giving them benefits such as larger explosions or the ability to place more bombs down at a time or even the ability to walk faster.
+The player is killed if they get caught up in a bomb's explosion, including their own, requiring players to be cautious of their own bomb placement.
+
+
+## Features
+
+- Run smoothly
+- Multiplayer
+- 3D's effects
+- Random generation
+
+
 ## Installation
 
 Install Bomber Man from the following GitHub link :
@@ -13,11 +27,16 @@ Now the project is installed, all you need to do is to generate the makefile the
 cmake .
 make
 ```
-    
+
+With all this done, you are now able to execute the generated executable file, thus enjoy your time on this fabulous game.
+
+
 ## Programming language
 
 - Raylib, used to implement an effect of "3D" while playing, as well as to do the global interface.
 - C++, used to compute everything to run well the project. For instance updating the position of the player when changing it (when pressing directionnal buttons), or its power-ups' value (when picking up one on the map when touching it).
+
+
 ## Authors
 
 - [@minipichUwU (Yannick ZHENG)](https://github.com/minipichUwU) who mainly implemented the power-ups of the player.
