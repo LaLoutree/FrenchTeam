@@ -1,6 +1,4 @@
 /*
-** EPITECH PROJECT, 2022
-** Main.cpp
 ** File description:
 ** main indie
 */
