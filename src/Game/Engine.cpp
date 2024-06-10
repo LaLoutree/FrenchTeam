@@ -4,7 +4,6 @@
 */
 
 #include "Engine.hpp"
-#include "Serialize.hpp"
 
 Engine::Engine()
 {
@@ -193,7 +192,7 @@ void Engine::runGame(void)
                 createPlayers(nbPlayer);
                 startGame = false;
             }
-            Rectangle backButtonPos = { static_cast<float>(GetScreenWidth()) / 2 - ((float)_menu.getTextureBackButton().width * 5.0f) / 2, static_cast<float>(GetScreenHeight()) / 2 - ((float)_menu.getTextureBackButton().height * 5.0f) / 2, (float)_menu.getTextureBackButton().width * 5.0f, (float)_menu.getTextureBackButton().height * 5.0f };
+            Rectangle backButtonPos = { static_cast<float>(GetScreenWidth()) / 2 - ((float)_menu.getTextureBackButton().width * 5.0f) / 2, static_cast<float>(GetScreenHeight()) / 2 - ((float)_menu.getTextureBackButton().height * 5.0f) / 2 + 200, (float)_menu.getTextureBackButton().width * 5.0f, (float)_menu.getTextureBackButton().height * 5.0f };
 
             _menu.changeScreen(&mouse, backButtonPos, &currentScreen, EXIT, &startGame);
 
@@ -324,7 +323,7 @@ void Engine::runGame(void)
                 Rectangle modalPos = { static_cast<float>(GetScreenWidth()) / 2 - 500 / 2, static_cast<float>(GetScreenHeight()) / 2 - 150 / 2, 500, 350 };
                 DrawRectangleRounded(modalPos, 0, 20, GRAY);
                 DrawText(winnerText.c_str(), GetScreenWidth() / 2 - MeasureText(winnerText.c_str(), 30) / 2, GetScreenHeight() / 2, 30, WHITE);
-                Rectangle backButtonPos = { static_cast<float>(GetScreenWidth()) / 2 - ((float)_menu.getTextureBackButton().width * 5.0f) / 2, static_cast<float>(GetScreenHeight()) / 2 - ((float)_menu.getTextureBackButton().height * 5.0f) / 2, (float)_menu.getTextureBackButton().width * 5.0f, (float)_menu.getTextureBackButton().height * 5.0f};
+                Rectangle backButtonPos = { static_cast<float>(GetScreenWidth()) / 2 - ((float)_menu.getTextureBackButton().width * 5.0f) / 2, static_cast<float>(GetScreenHeight()) / 2 - ((float)_menu.getTextureBackButton().height * 5.0f) / 2 + 200, (float)_menu.getTextureBackButton().width * 5.0f, (float)_menu.getTextureBackButton().height * 5.0f};
                 DrawTexturePro(_menu.getTextureExitButton(), _menu.getSourceRec(), backButtonPos, (Vector2) { 5, 5.0 }, 0, WHITE);
             }
         }
