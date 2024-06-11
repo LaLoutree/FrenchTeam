@@ -44,10 +44,10 @@ With all this done, you are now able to execute the generated executable file, t
 - [@akshayyyr (Akshay RAMAEL)](https://github.com/akshayyyr) who mainly implemented the player.
 - [@NachosRumble (Théo CHARBONNIER)](https://github.com/NachosRumble) who mainly implemented the map.
 - [@LaLoutree (Bastien DESERT)](https://github.com/LaLoutree) who mainly implemented the bomb management.
-- [@??? (Paul ROZENKRAZ)](https://github.com/???) who mainly implemented the User's Interface.
+- [@paul-rosenkranz(Paul ROSENKRANZ)](https://github.com/paul-rosenkranz) who mainly implemented the User's Interface.
 
 
 ## Appendix
 
 While doing the project, we noticed that the power-ups and the map was pretty much linked together, since the spawning of the power-ups depends of the location of the breakable wall in the map. Hence we decided to implement of the power-ups of the player (done by Yannick ZHENG) and the map (done by Théo CHARBONNIER) in the same file located at "src/Game/Object/Platform/Map/Map.cpp".
-
+The implementation of the User's Interface (by Paul) and the engine (by Henry) are also in the same file.
